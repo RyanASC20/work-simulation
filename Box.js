@@ -6,7 +6,7 @@ class Box {
         this.g = 9.81;
         this.pos = createVector(0, 0);
         this.mass = mass;
-        this.size = this.mass * 3;
+        this.size = 50;
         this.theta = theta;
         this.acceleration = this.g * sin(theta);
         this.velocity = 0;
