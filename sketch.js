@@ -26,7 +26,7 @@ function displayData(PE, KE, v) {
         height - 80
     );
 
-    text(`Time: ${Math.round(time / 60)}s`, width - 270, height - 60);
+    // text(`Time: ${Math.round(time / 60)}s`, width - 270, height - 60);s
 }
 
 function setValues() {
@@ -129,6 +129,7 @@ function draw() {
     r1.draw();
     if (running) {
         b1.update();
+        // time++;
     }
     pop();
 
