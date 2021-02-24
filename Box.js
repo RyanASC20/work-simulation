@@ -10,7 +10,7 @@ class Box {
         this.theta = theta;
         this.acceleration = this.g * sin(theta);
         this.velocity = 0;
-        this.h = (rampLength / 10) * sin(theta);
+        this.h = (rampLength) * sin(theta);
         this.PE = this.mass * this.g * this.h;
         this.ME = this.PE;
         this.KE = 0;
@@ -21,7 +21,7 @@ class Box {
     }
 
     distTraveled() {
-        return dist(this.startX, this.startY, this.pos.x, this.pos.y) / 10;
+        return dist(this.startX, this.startY, this.pos.x, this.pos.y);
     }
 
     calculateEnergies() {
@@ -36,7 +36,7 @@ class Box {
     update() {
         if (this.h > 0) {
             this.calculateEnergies();
-            this.h = (rampLength / 10 - this.distTraveled()) * sin(theta);
+            this.h = (rampLength - this.distTraveled()) * sin(theta);
 
             this.velocity += (this.acceleration - this.friction) / 60;
             // console.log(this.acceleration, this.friction)
