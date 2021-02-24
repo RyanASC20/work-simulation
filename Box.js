@@ -10,7 +10,7 @@ class Box {
         this.theta = theta;
         this.acceleration = this.g * sin(theta);
         this.velocity = 0;
-        this.h = (rampLength) * sin(theta);
+        this.h = (rampLength ) * sin(theta);
         this.PE = this.mass * this.g * this.h;
         this.ME = this.PE;
         this.KE = 0;
@@ -21,7 +21,7 @@ class Box {
     }
 
     distTraveled() {
-        return dist(this.startX, this.startY, this.pos.x, this.pos.y);
+        return dist(this.startX, this.startY, this.pos.x, this.pos.y) / 20;
     }
 
     calculateEnergies() {

@@ -8,7 +8,7 @@ class EnergyBar {
     }
 
     update(d) {
-        this.h = -d / 500;
+        this.h = -d / 50;
     }
 
     draw() {

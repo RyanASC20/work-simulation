@@ -67,7 +67,7 @@ function controls() {
     const rampLengthPrompt = createElement("h4", "Length: ")
     rampLengthPrompt.position(20, 110);
 
-    rampLengthInput = createInput(0.83 * height, "number");
+    rampLengthInput = createInput(20, "number");
     rampLengthInput.size(40, 20);
     rampLengthInput.position(rampLengthPrompt.x + 160, rampLengthPrompt.y + 20);
     rampLengthInput.changed(setValues);

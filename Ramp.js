@@ -2,7 +2,7 @@ class Ramp {
     constructor(x1, y1, len) {
         this.x1 = x1;
         this.y1 = y1;
-        this.len = len;
+        this.len = len * 20;
     }
 
     draw() {
